@@ -1,0 +1,305 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+/* Beacon Toggle header and footer + modif ribbon */
+#header, .page-footer {
+	display: none;
+}
+
+.noHeader-ribbon {
+	top: 0 !important;
+}
+#left-panel {
+	padding-top: 0px;
+}
+
+/* Modif Button toggle menu */
+#ribbon {
+	background-color: rgba(0, 0, 0, 0); /*Opacité du fond à 0*/
+	border-bottom: none;
+}
+
+#hide-menu {
+	margin-top: -6px;
+	margin-left: -7px;
+}
+
+/* bouton de toggle-menu de l'interieur du menu */
+span #hide-menu {
+	position: fixed;
+	right: 0;
+	margin-top: -44px;
+}
+
+span #hide-menu #hide-menu-button a i {
+	margin-top: 12px !important;
+}
+
+/* Header */
+#header #lien-promo-produit, #header #lien-meilleures-ventes {
+	text-decoration: none;
+	color: black;
+}
+
+#photo-produit {
+	border-right: 1px solid #aeaeae;
+	height: 100%;
+}
+
+#promo-produit #nom-produit, #promo-produit #rating-produit {
+	margin-bottom: -3px;
+}
+
+#promo-produit #nom-produit{
+	margin-top: 1px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#promo-produit #prix-produit #prix-barre {
+	text-decoration: line-through;
+}
+
+#photo-produit {
+	padding-top: 5px;
+}
+
+#photo-produit-img {
+	border: 1px solid #bfbebe;
+
+}
+
+#photo-produit-img {
+	min-height: 40px;
+	min-width: 40px;
+}
+
+#promo-meilleures-ventes {
+	padding-right: 5px;
+}
+
+#promo-meilleures-ventes #nom-rayon {
+	margin-bottom: -2px;
+	margin-top: 1px;
+}
+
+#promo-meilleures-ventes #meilleures-ventes #les-meilleures {
+	margin-bottom: -5px;
+}
+
+#fleche-ventes-div {
+	margin-top: 25px;
+}
+
+/* Footer */
+.page-footer {
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+#conseil-rayon #libelle-conseil-rayon {
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+
+#conseil-rayon #description-conseil-rayon {
+	font-size: 11px;
+}
+
+#icon-plan-magasin {
+	border-left: 1px solid #aeaeae;
+	height: 100%;
+	padding-top: 2%;
+}
+
+#icon-plan-magasin span {
+	font-size: 30px;
+	margin-left: -8px;
+}
+
+.lienFooter{
+	color: black !important;
+	text-decoration: none;
+}
+
+#titre-plan-magasin {
+	padding-top: 2%;
+}
+
+/* menu promo */
+#backHome {
+	display: none;
+	color: black;
+	position: fixed;
+	top :10px;
+	left: 20px;
+	font-size: 25px;
+}
+
+/* detail.dont.html */
+ol,ul {
+	list-style-type: none;
+}
+
+#categories-produit-detail li {
+	margin-right: -2px;
+	text-align: center;
+}
+
+#main-image-product {
+	margin-bottom: 15px;
+}
+
+#secondary-images-product {
+	padding-right: 2.5em;
+}
+
+.secondary-image-product {
+	margin-bottom: 5px;
+}
+
+/* products.html */
+.list-promo-produit {
+	margin-top: 49px;
+	margin-bottom: 0px;
+}
+
+.product-content {
+	margin-top: 0px;
+}
+
+.product-content .product-image {
+	min-height: 0px;
+}
+
+#shopping-cart-ribbon {
+	position: fixed;
+	font-size: 20px;
+	right: 20px;
+	top: 10px;
+}
+
+.produit-meilleures-ventes {
+	width: 48%;
+	float: left;
+}
+
+.align-right {
+	float: right;
+}
+
+.firstof2col {
+	margin-top: -1px;
+}
+
+.product-deatil {
+	border-bottom: none !important;
+}
+
+.notes-moyennes {
+	font-size: 20px;
+}
+
+/* detail.html */
+.wishlist-contact {
+	margin-top: 15px;
+}
+
+.product-content.product-deatil {
+	margin-bottom: 0px;
+	padding-bottom: 30px;
+}
+
+.message-text {
+	margin-left: 0px !important;
+	width: 100% !important;
+}
+
+#submitForm {
+	height: 30px;
+}
+
+#myNote {
+	margin-top: 3px;
+}
+
+#noteMoy {
+	margin-top: 4px;
+	margin-right: 10px;
+}
+
+#carouselProductDetail .item img{
+	max-height: 171.25px;
+}
+
+.price-container #prix-barre {
+	text-decoration: line-through;
+	color: #3276b1;
+}
+
+/* validation formAvis */
+.ng-submitted .ng-invalid {
+	border-color: red;
+}
+
+.ng-submitted.ng-dirty .ng-invalid {
+	border-color: #ccc;
+}
+
+/* fiches.html */
+.imageFiche {
+	max-height: 100px;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 8px;
+}
+
+.titreFiche {
+	margin-left: 10px;
+}
+
+.apercuFiche {
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.lireSuite {
+	margin-right: 5px;
+}
+
+.ficheConseil {
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+
+/* detail-fiche.html */
+.imageDetailFiche {
+	max-height: 171.25px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+/* home.html */
+.fixed-ribbon #content {
+	padding-top: 3px;
+}

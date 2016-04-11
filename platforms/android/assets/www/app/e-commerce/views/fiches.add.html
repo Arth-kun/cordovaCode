@@ -1,0 +1,25 @@
+    <!-- row -->
+    <section id="widget-grid" class="list-promo-produit">
+
+        <!-- row -->
+
+        <div class="row" ng-controller="fichesController">
+
+            <div class="col-sm-6 col-md-6 col-lg-6"  ng-repeat="fiche in fiches" ng-init="redimApercu(fiche)">
+                <!-- fiche -->
+                <div class="product-content product-wrap clearfix ficheConseil" ng-click="goToDetail(fiche.idFiche)">
+                    
+                    <h1 class="titreFiche">{{fiche.titre}}</h1>
+                    <img class="imageFiche" ng-src="{{fiche.image}}">
+                    <p class="apercuFiche">{{fiche.apercu}}...</p>
+                    <p class="pull-right lireSuite">Lire la suite <span class="glyphicon glyphicon-menu-right"></span></p>
+
+                </div>
+                <!-- end fiche -->
+            </div>
+
+        </div>
+        <!-- end row -->
+
+    </section>
+    <!-- end row -->

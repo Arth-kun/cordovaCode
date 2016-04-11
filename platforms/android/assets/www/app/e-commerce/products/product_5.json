@@ -1,0 +1,45 @@
+{
+    "id": 5,
+  	"nom": "Chaussure mode",
+  	"noteMoy": 4,
+  	"nbVote": 45,
+  	"nbAvis": 2,
+  	"prix": 195,
+    "promo": false,
+    "promTag": "",
+    "prixHorsProm": 195,
+  	"categorie": "Chaussures",
+  	"images":[
+  	"styles/img/demo/e-comm/5.png",
+  	"styles/img/demo/e-comm/detail-2.png",
+  	"styles/img/demo/e-comm/detail-3.png"
+  	],
+  	"description":{
+  		"titre": "Super cartable haut de gamme",
+  		"corps": "Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque augue sodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec."
+  	},
+  	"caracteristiques":[{
+  		"titre": "Gravina",
+  		"corps": "Etiam porta sem malesuada magna mollis euismod."
+  	},
+  	{
+  		"titre": "Test lists",
+  		"corps": "A description list is perfect for defining terms."
+  	},
+  	{
+  		"titre": "Altra porta",
+  		"corps": "Vestibulum id ligula porta felis euismod semper"
+  	}],
+  	"avis":[{
+  		"nom": "Alisha Molly",
+  		"corps": "Can't divide were divide fish forth fish to. Was can't form the, living life grass darkness very image let unto fowl isn't in blessed fill life yielding above all moved",
+  		"note": 4,
+  		"date": "21/11/2015"
+  	},
+  	{
+  		"nom": "Aragon Zarko",
+  		"corps": "Excellent product, love it!",
+  		"note": 5,
+  		"date": "10/03/2016"
+  	}]
+}

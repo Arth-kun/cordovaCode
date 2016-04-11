@@ -1,0 +1,85 @@
+    <!-- row -->
+    <section id="widget-grid" class="list-promo-produit">
+
+        <!-- row -->
+
+        <div class="row" ng-controller="productsController">
+
+            <div class="col-sm-6 col-md-6 col-lg-6"  ng-repeat="product in products">
+                <!-- product -->
+                <div class="product-content product-wrap clearfix produit-meilleures-ventes"  id="product{{product.numeroRepeat}}" ng-init="classDispenser(product.numeroRepeat)" ng-click="goToDetail(product.idProduit)">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-12">
+                            <div class="product-image">
+                                <img ng-src="{{product.image}}" alt="194x228" class="img-responsive">
+												<span ng-show="product.promo" class="tag2 hot">
+													{{product.promTag}}
+												</span>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12 col-xs-12">
+                            <div class="product-deatil">
+                                <h5 class="name">
+                                    <a href="#">
+                                        {{product.nom}} <span>{{product.categorie}}</span>
+                                    </a>
+                                </h5>
+                                <p class="price-container">
+                                    <span>{{product.prix}} €</span>
+                                </p>
+                                <div ng-switch="product.note">
+                                <div class="notes-moyennes" ng-switch-when="0">
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </div>
+                                <div class="notes-moyennes" ng-switch-when="1">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </div>
+                                <div class="notes-moyennes" ng-switch-when="2">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </div>
+                                <div class="notes-moyennes" ng-switch-when="3">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </div>
+                                <div class="notes-moyennes" ng-switch-when="4">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </div>
+                                <div class="notes-moyennes" ng-switch-when="5">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end product -->
+            </div>
+
+        </div>
+        <!-- end row -->
+
+    </section>
+    <!-- end row -->

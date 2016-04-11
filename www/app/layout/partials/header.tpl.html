@@ -1,0 +1,79 @@
+<header id="header" class="row" ng-controller="headerController" ng-init="productPromo(x)">
+
+    <!-- Permet d'avoir le texte de la nav bar de gauche (donc à garder !!) -->
+    <language-selector></language-selector>
+
+    <a href="#/e-commerce/products-detail/{{product.id}}" id="lien-promo-produit">
+        <div id="promo-produit" class="col-xs-5">
+         <div class="bold" id="nom-produit">
+           {{product.nom}}
+       </div>
+       <div id="rating-produit">
+           <span ng-switch="product.noteMoy">
+            <span ng-switch-when="0">
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </span>
+            <span ng-switch-when="1">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </span>
+            <span ng-switch-when="2">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </span>
+            <span ng-switch-when="3">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </span>
+            <span ng-switch-when="4">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+            </span>
+            <span ng-switch-when="5">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+            </span>
+        </span>
+        <span>{{product.nbAvis}} avis</span>
+    </div>
+    <div id="prix-produit"><span id="prix-barre">{{product.prixHorsProm}}€  </span><span class="bold" id="prix-reduit">{{product.prix}}€</span>
+    </div>
+
+</div>
+<div id="photo-produit" class="col-xs-2">
+   <img id="photo-produit-img" class="img-responsive	img-rounded" ng-src="{{product.images[0]}}">
+</div>
+</a>
+
+<a href="#/e-commerce/products-view" id="lien-meilleures-ventes">
+    <div id="promo-meilleures-ventes" class="col-xs-4">
+       <div id="nom-rayon">
+         Openspace
+     </div>
+     <div class="bold" id="meilleures-ventes">
+      <div id="les-meilleures">Les meilleures</div>
+      <div>ventes</div>
+  </div>
+</div>
+<div id="fleche-ventes-div" class="col-xs-1"><span class="glyphicon glyphicon-menu-right" id="fleche-ventes-span"></span></div>
+</a>
+</header>

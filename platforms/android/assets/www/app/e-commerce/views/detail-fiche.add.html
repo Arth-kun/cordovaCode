@@ -1,0 +1,26 @@
+    <!-- row -->
+    <section id="widget-grid" class="list-promo-produit">
+
+        <!-- row -->
+
+        <div class="row" ng-controller="detailFicheController">
+
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <!-- product -->
+                <div class="product-content product-wrap clearfix product-deatil">
+                <h1>{{fiche.titre}}</h1>
+                <img class="imageDetailFiche" ng-src="{{fiche.image}}">
+                <p class="corpsDetailFiche" ng-repeat="corps in fiche.corps">
+                    {{corps}}
+                </p>
+                    
+                </div>
+                <!-- end product -->
+            </div>
+
+        </div>
+
+    <!-- end row -->
+
+</section>
+    <!-- end row -->
